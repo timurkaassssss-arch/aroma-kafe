@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання | Arôme caffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Arôme caffee</div>
+
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="menu.html">Меню</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="booking.html">Бронювання</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Забронювати столик</h1>
+
+        <form class="booking-form">
+            <label for="name">Ваше ім’я</label>
+            <input type="text" id="name" required>
+
+            <label for="date">Дата</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Час</label>
+            <input type="time" id="time" required>
+
+            <label for="guests">Кількість гостей</label>
+            <input type="number" id="guests" min="1" max="15" value="2" required>
+
+            <button type="submit" class="btn">Забронювати</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 Arôme caffee</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Caacupe+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Russo One", sans-serif;
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #3e2723;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d7ccc8;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #d7ccc8;
+}
+
+.hero {
+  background-image: url("Roblox_Card.png");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 150px 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d7ccc8;
+  color: #3e2723;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: white;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+main h1,
+main > h2 {
+  text-align: center;
+  color: #3e2723;
+  margin-bottom: 25px;
+}
+
+.menu-section {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.menu-section h2 {
+  color: #3e2723;
+  margin-bottom: 10px;
+}
+
+.menu-section p {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 15px;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.booking-form button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
